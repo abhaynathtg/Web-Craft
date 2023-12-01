@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    scroll-behavior: smooth;
+    width: 100%;
+    background-color: black;
+    font-family: "Poppins";
+}
+.main{
+    height: max-content;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+}
+img{
+    height: 70vh;
+    width: 25vw;
+}
+.photo{
+    height: 100vh;
+    width: 40%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 20px;
+}
+#content{
+    height: 100%;
+    width: 60%;
+    color: white;
+    font-size: 20px;
+    text-align: left;
+    padding-top: 150px;
+    margin: 30px;
+
+}
+h1{
+    font-weight: normal;
+    font-size: 60px;
+}
+#line2{
+    color: rgba(54, 181, 151, 1);
+}
+h3{
+    font-size: 30px;
+    color: rgba(54, 181, 151, 1);
+}
+.Contact-button{
+    height: 60px;
+    width: 250px;
+    background-color: transparent;
+    color: rgba(54, 181, 151, 1);
+    border: 2px solid rgba(54, 181, 151, 1);
+    transition: ease-in 0.25s;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.Contact-button:hover{
+    color: blue;
+    background-color: grey;
+    border: 3px solid blue;
+    font-weight: bold;
+}
+@media (min-width:300px) and (max-width:991px){
+    .main{
+        width: 90vw;
+        flex-direction: column;
+        padding: 20px;
+        margin-bottom: 0;
+    }
+    img{
+        height: 80%;
+        width: 50%;
+    }
+    .photo{
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+
+    }
+    #content{
+        height: fit-content;
+        width: 80%;
+        color: rgba(54, 181, 151, 1);
+        font-size: 20px;
+        text-align: center;
+        padding:0;
+        font-size: 1rem;
+        margin:0% 8% 5% 8% ;
+    
+    }
+    h1{
+        font-weight: normal;
+        font-size: 3rem;
+        
+    }
+    #line2{
+        color: red;
+    }
+    h3{
+        font-size: 2rem;
+        color: red;
+    }
+    .Contact-button{
+        color: blue;
+        border: 0.2rem solid blue;
+        height: 3.5rem;
+        width: 13rem;
+        font-size: 1.75rem;
+    }
+    .Contact-button:hover{
+        color: rgb(255, 136, 0);
+        background-color: rgb(26, 41, 1);
+        border: 3px solid rgb(255, 136, 0);
+    }
+}
